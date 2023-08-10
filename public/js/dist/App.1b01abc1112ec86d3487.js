@@ -131,7 +131,7 @@ function App() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     getTodos();
   }, []);
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(_components_TodoList_TodoList__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, "Hello there, Let's get some work done today"), /*#__PURE__*/React.createElement(_components_TodoList_TodoList__WEBPACK_IMPORTED_MODULE_1__["default"], {
     newTodo: newTodo,
     setNewTodo: setNewTodo,
     createTodo: createTodo,
@@ -164,7 +164,7 @@ function Todo(_ref) {
   } = _ref;
   return /*#__PURE__*/React.createElement("div", {
     className: _Todo_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].todo
-  }, " ", todo.title, /*#__PURE__*/React.createElement("button", {
+  }, ' ', todo.title, /*#__PURE__*/React.createElement("button", {
     className: _Todo_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].button,
     onClick: () => buttonAction(todo._id)
   }, buttonText));
@@ -273,18 +273,25 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.dF90VpCFmFTIHpnHLKQv {
   color: rgba(23, 5, 58, 0.8);
 }
 .dF90VpCFmFTIHpnHLKQv .QxYmIa1HnHqyxrkndPO_ {
-  background-color: rgba(23, 5, 58, 0.8);
-  text-transform: uppercase;
-  cursor: pointer;
-  color: ghostwhite;
+  background-color: #4caf50;
+  color: white;
   padding: 0.25rem 1rem;
   font-size: 1rem;
-  font-weight: 700;
-  display: inline-block;
   margin-left: 1rem;
-  border: 2px;
-  box-shadow: 0 2px 5px rgba(23, 5, 58, 0.5);
-}`, "",{"version":3,"sources":["webpack://./src/components/Todo/Todo.module.scss"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,iBAAA;EACA,2BAAA;AACJ;AAAI;EACI,sCAAA;EACA,yBAAA;EACA,eAAA;EACA,iBAAA;EACA,qBAAA;EACA,eAAA;EACA,gBAAA;EACA,qBAAA;EACA,iBAAA;EACA,WAAA;EACA,0CAAA;AAER","sourcesContent":[".todo {\n    /*! keep */\n    font-size: 1.5rem;\n    color: rgba(23, 5, 58, 0.8);\n    .button {\n        background-color: rgba(23, 5, 58, 0.8);\n        text-transform: uppercase;\n        cursor: pointer;\n        color: ghostwhite;\n        padding: 0.25rem 1rem;\n        font-size: 1rem;\n        font-weight: 700;\n        display: inline-block;\n        margin-left: 1rem;\n        border: 2px;\n        box-shadow: 0 2px 5px rgba(23, 5, 58, 0.5);\n    }\n}"],"sourceRoot":""}]);
+  margin-top: 0.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+.dF90VpCFmFTIHpnHLKQv .QxYmIa1HnHqyxrkndPO_:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}`, "",{"version":3,"sources":["webpack://./src/components/Todo/Todo.module.scss"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,iBAAA;EACA,2BAAA;AACJ;AAAI;EACF,yBAAA;EACA,YAAA;EACA,qBAAA;EACA,eAAA;EACA,iBAAA;EACA,kBAAA;EACA,qBAAA;EACA,gBAAA;EACA,kBAAA;EACA,eAAA;EACA,qBAAA;EACA,wCAAA;EACA,sCAAA;EACA,qBAAA;AAEF;AAAI;EACF,qBAAA;EACA,yCAAA;AAEF","sourcesContent":[".todo {\n    /*! keep */\n    font-size: 1.5rem;\n    color: rgba(23, 5, 58, 0.8);\n    .button {\n  background-color: #4caf50;\n  color: white;\n  padding: 0.25rem 1rem;\n  font-size: 1rem;\n  margin-left: 1rem;\n  margin-top: 0.1rem;\n  margin-bottom: 0.5rem;\n  font-weight: 700;\n  border-radius: 4px;\n  cursor: pointer;\n  display: inline-block;\n  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n  transition: transform 0.3s ease-in-out;\n  transform: scale(1.1);\n    };\n    .button:hover {\n  transform: scale(1.1);\n  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);\n    }\n\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"todo": `dF90VpCFmFTIHpnHLKQv`,
@@ -331,9 +338,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.wnFJvwW6SXbdzT0JPncz {
   font-size: 2.5rem;
   height: 3.5rem;
   margin: 1rem;
-  border: 0;
-  background-color: rgb(243, 245, 254);
-}`, "",{"version":3,"sources":["webpack://./src/components/TodoList/TodoList.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,eAAA;EACA,2BAAA;EACA,kBAAA;EACA,sCAAA;EACA,aAAA;EACA,4CAAA;AACJ;AAAI;EACI,2BAAA;EACA,qBAAA;EACA,iBAAA;EACA,cAAA;EACA,YAAA;EACA,SAAA;EACA,oCAAA;AAER","sourcesContent":[".todolist {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-size: 2rem;\n    color: rgba(23,5, 58, 0.8);\n    border-radius: 9px;\n    border: 1px solid rgba(23,5, 58, 0.1);\n    padding: 2rem;\n    box-shadow: 2px 4px 8px rgba(23,5, 58, 0.5);\n    .input {\n        color:rgba(23,5, 58, 0.8);\n        display: inline-block;\n        font-size: 2.5rem;\n        height: 3.5rem;\n        margin: 1rem;\n        border: 0;\n        background-color: rgb(243, 245, 254);\n    }\n}"],"sourceRoot":""}]);
+  border-radius: 15%;
+  box-shadow: 0 4px 8px rgba(167, 13, 180, 0.5);
+}`, "",{"version":3,"sources":["webpack://./src/components/TodoList/TodoList.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,eAAA;EACA,2BAAA;EACA,kBAAA;EACA,sCAAA;EACA,aAAA;EACA,4CAAA;AACJ;AAAI;EACI,2BAAA;EACA,qBAAA;EACA,iBAAA;EACA,cAAA;EACA,YAAA;EACA,kBAAA;EACA,6CAAA;AAER","sourcesContent":[".todolist {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-size: 2rem;\n    color: rgba(23,5, 58, 0.8);\n    border-radius: 9px;\n    border: 1px solid rgba(23,5, 58, 0.1);\n    padding: 2rem;\n    box-shadow: 2px 4px 8px rgba(23,5, 58, 0.5);\n    .input {\n        color:rgba(23,5, 58, 0.8);\n        display: inline-block;\n        font-size: 2.5rem;\n        height: 3.5rem;\n        margin: 1rem;\n        border-radius: 15%;\n        box-shadow: 0 4px 8px rgba(167, 13, 180, 0.5);\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"todolist": `wnFJvwW6SXbdzT0JPncz`,
@@ -621,4 +628,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.7de5dcddc93f12091da4672013c19c8c.js.map
+//# sourceMappingURL=App.818130c6dda5036b39bb4d254112c16f.js.map
